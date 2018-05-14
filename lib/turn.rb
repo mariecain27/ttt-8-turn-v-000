@@ -12,6 +12,7 @@ def turn(board)
   index = input_to_index(input)
   if valid_move?(board, index)
     move(board, index, 'X')
+<<<<<<< HEAD
     display_board(board)
   else 
     until valid_move?(board, index)
@@ -22,6 +23,18 @@ def turn(board)
     move(board, index, 'X')
     display_board(board)
   end
+=======
+  else 
+    until valid_move?(board, index)
+      turn(board)
+    end
+  end
+#  if valid_move?(board, index)
+#    move(board, new_index, 'X')
+#  else
+#    turn(board)
+#  end
+>>>>>>> 056b8e7c6ca0693c4490de82828600da092ca30e
 end
 
 # code your input_to_index and move method here!
